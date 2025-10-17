@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Experiência em Motorhome — Viagens pela Europa</title>
+  <meta name="description" content="Vivencie estradas europeias a bordo de um motorhome confortável — roteiros, paisagens e experiências personalizadas." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent: #FF6B35;
+      --dark: #061221;
+      --muted: #6b7280;
+      --card: rgba(255,255,255,0.06);
+      font-family: 'Montserrat', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#0b1220 0%, #071025 100%);color:#e6eef8;line-height:1.5}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:24px;align-items:center;padding:36px 20px}
+    .hero-inner{display:flex;flex-direction:column;gap:18px}
+    .badge{background:linear-gradient(90deg,var(--accent),#ff8a5a);padding:6px 12px;border-radius:999px;font-weight:700;color:white;display:inline-block}
+    h1{font-size:clamp(28px,4.5vw,44px);margin:0}
+    p.lead{color:var(--muted);max-width:68ch}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--accent);padding:12px 18px;border-radius:12px;color:white;font-weight:700;border:0;cursor:pointer;text-decoration:none}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.12);color:inherit}
+
+    .showcase{display:grid;grid-template-columns:1fr;gap:16px;border-radius:18px;overflow:hidden}
+    .showcase img{width:100%;height:340px;object-fit:cover;display:block}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:22px}
+    .card{background:var(--card);padding:18px;border-radius:12px}
+    .card h3{margin:0 0 8px 0}
+    .card p{margin:0;color:var(--muted)}
+
+    .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:18px}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+
+    .split{display:grid;grid-template-columns:2fr 1fr;gap:18px;margin-top:20px}
+    .panel{background:#071828;padding:18px;border-radius:12px}
+
+    footer{margin-top:30px;padding:20px 0;color:var(--muted);font-size:14px;text-align:center}
+
+    @media (max-width:900px){
+      .grid{grid-template-columns:1fr}
+      .split{grid-template-columns:1fr}
+      .gallery{grid-template-columns:repeat(2,1fr)}
+      .showcase img{height:220px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <div class="hero-inner">
+        <span class="badge">Novo</span>
+        <h1>Experiência em Motorhome — Roteiros e paisagens pela Europa</h1>
+        <p class="lead">Viaje com conforto e liberdade: estradas cênicas, vilarejos históricos e campings selecionados. Pacotes flexíveis para casais, famílias ou aventureiros solo.</p>
+        <div class="cta-row">
+          <a class="btn" href="mailto:contato@expmotorhome.com?subject=Quero%20saber%20mais%20sobre%20a%20Experi%C3%AAncia%20em%20Motorhome">Reserve sua vaga</a>
+          <a class="btn ghost" href="#itinerario">Ver itinerários</a>
+        </div>
+      </div>
+
+      <div class="showcase" aria-hidden="true">
+        <img src="images/hero.jpg" alt="Motorhome dirigindo por estrada europeia" loading="lazy">
+      </div>
+    </header>
+
+    <section class="grid" aria-label="Destaques">
+      <div class="card">
+        <h3>Roteiros personalizáveis</h3>
+        <p>Escolha entre Alpes, Costa Amalfitana, Rota dos Vinhos ou trilhas da Escócia com suporte completo.</p>
+      </div>
+      <div class="card">
+        <h3>Motorhomes completos</h3>
+        <p>Veículos equipados com cozinha, banho, aquecimento e Wi‑Fi — prontos para a estrada.</p>
+      </div>
+      <div class="card">
+        <h3>Suporte local 24/7</h3>
+        <p>Equipe multilíngue para assistência, reservas e dicas locais durante toda a viagem.</p>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Galeria de paisagens" style="margin-top:28px">
+      <img src="images/mountain.jpg" alt="Paisagem montanhosa na Europa" loading="lazy">
+      <img src="images/coast.jpg" alt="Costa europeia com estrada" loading="lazy">
+      <img src="images/countryside.jpg" alt="Estrada no interior europeu" loading="lazy">
+      <img src="images/camping.jpg" alt="Área de camping para motorhome" loading="lazy">
+    </section>
+
+    <section id="itinerario" class="split">
+      <div class="panel">
+        <h2 style="margin-top:0">Itinerário exemplo — 10 dias pela região dos Alpes</h2>
+        <ol>
+          <li><strong>Dia 1:</strong> Chegada em Munique, retirada do motorhome e briefing.</li>
+          <li><strong>Dia 2–3:</strong> Rota para Garmisch-Partenkirchen — trilhas e mirantes.</li>
+          <li><strong>Dia 4–6:</strong> Passagem por Innsbruck e pequena rota panorâmica pelos Alpes.</li>
+          <li><strong>Dia 7–9:</strong> Vinícolas e vilarejos históricos na região do Tirol.</li>
+          <li><strong>Dia 10:</strong> Retorno ao ponto de entrega — encerramento da experiência.</li>
+        </ol>
+        <p style="color:var(--muted)">Personalizamos duração, trechos e nível de atividade conforme seu perfil.</p>
+      </div>
+
+      <aside class="panel">
+        <h3>Pacotes a partir de</h3>
+        <div style="display:flex;gap:12px;align-items:center;margin-top:10px">
+          <div style="flex:1">
+            <div style="font-size:20px;font-weight:800">€1.890</div>
+            <div style="color:var(--muted);font-size:14px">(motorhome para 2 pessoas, 10 dias)</div>
+          </div>
+        </div>
+        <hr style="border:none;border-top:1px solid rgba(255,255,255,0.04);margin:12px 0">
+        <p style="color:var(--muted);font-size:14px">Inclui seguro básico, suporte local e kit de boas-vindas. Não inclui combustível, pedágios e taxas de acampamento.</p>
+        <a class="btn" href="mailto:contato@expmotorhome.com?subject=Solicita%C3%A7%C3%A3o%20de%20Reserva">Peça um orçamento</a>
+      </aside>
+    </section>
+
+    <section style="margin-top:20px;padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:12px">
+      <h2 style="margin:0 0 10px 0">Depoimentos</h2>
+      <blockquote style="margin:0;color:var(--muted)">"Viagem inesquecível — as estradas e a liberdade de parar onde quisemos fizeram toda a diferença." — Ana P., Lisboa</blockquote>
+    </section>
+
+    <section style="margin-top:20px;padding:18px;background:#071828;border-radius:12px">
+      <h2 style="margin-top:0">Fale conosco</h2>
+      <p style="color:var(--muted)">Envie suas dúvidas ou pegue um orçamento rápido:</p>
+      <form action="#" onsubmit="alert('Obrigado! Entraremos em contato. (formulário de exemplo)');return false;" style="display:flex;flex-direction:column;gap:10px">
+        <input name="nome" type="text" placeholder="Seu nome" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit">
+        <input name="email" type="email" placeholder="Seu email" required style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit">
+        <textarea name="mensagem" placeholder="Mensagem / datas preferidas" rows="4" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit"></textarea>
+        <div style="display:flex;gap:8px">
+          <button class="btn" type="submit">Enviar</button>
+          <a class="btn ghost" href="mailto:contato@expmotorhome.com">Enviar por Email</a>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      © <span id="ano"></span> Experiência em Motorhome • Desenvolvido por você
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
